@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/***********Estilos header***********/
+
+.logo {
+    width: 200px;
+}
+
+
+
+/***********Estilos main***********/
+/*section uno*/
+.imgCarousel {
+
+    display: inline-block;
+    text-align: center;
+}
+
+.imgCarouselTexto {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+}
+
+/*section dos*/
+.section-dos {
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+
+
+}
+
+.section-dos-bloques {
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vueloImg {
+    height: 90%;
+}
+
+/*section tres*/
+.textoSectionTres {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+
+    transform: translate(130%, -500%);
+}
+
+/*section cuatro*/
+.section-cuatro {
+    background-color: #FEBE2B;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+
+}
+
+.section-cuatro-bloques {
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+
+}
+
+.img-section-cuatro {
+    width: 70%;
+    margin: 15px;
+}
+
+.texto-section-cuatro {
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 20px;
+
+}
+
+/***********Estilos footer***********/
+.footer {
+    background-color: #00b3e9;
+    height: 1000px;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+
+}
+
+.publicidad {
+
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.logoFooter {
+    width: 200px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.iconosFooter {
+    height: 40px;
+
+}
+
+.iconosFooter:hover {
+    background-color: rebeccapurple;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 2px;
+}
+
+
+/***********Estilos lista viajes***********/
+.contenedorLista {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    background-color: #212121;
+
+}
+.tituloViajes{
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    color: white;
+}
+.error{
+    padding-left: 100px;
+    color: red;
+    padding-bottom: 10px;
+}
+
+
+.mainViajes {
+    background-color: #212121;
+}
+
+.destino {
+    font-weight: lighter
+}
+
+#fw-bold {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#inputGroup {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#listaVuelos {
+    background-color: #424242
+}
+
+.listaVuelos {
+    color: white;
+}
+
+.iconoAvion {
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.iconoAvion:hover {
+    background-color: #00b3e9;
+    border-radius: 50%;
+}

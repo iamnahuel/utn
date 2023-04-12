@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/icono.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Viajes | UTN-Grupo 3</title>
+    <script src="../js/viajes.js" type="module"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu">
+            <div class="container-fluid">
+                <img src="../img/logo.png" alt="" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">VIAJES</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Grupo 3 | UTN
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mainViajes">
+        <h4 class="tituloViajes">LISTADO VUELOS</h2>
+           <span id="error" class="error"></span>
+           
+            <div id="inputGroup" class="input-group mb-3">
+                <input type="text" class="form-control" id="inputdestino" placeholder="Destino" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button"
+                id='validate'>Buscar</button>
+            </div>
+            <div id="app" class="contenedorLista">
+
+            </div>
+            <div id="container"></div>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="">
+            <a href="https://www.argentina.gob.ar/turismoydeportes">
+                <img src="../img/logoArgentina.png" alt="" class="logoFooter">
+            </a>
+            <a
+                href="https://sceu.frba.utn.edu.ar/e-learning/?gclid=Cj0KCQjwuLShBhC_ARIsAFod4fLywGhvB2D2L9Z-fT3Cd5mtk3Fd62QRrgXq3zkqx6fIojqeDcB0LYgaAjg5EALw_wcB">
+                <img src="../img/logoUtn.png" alt="" class="logoFooter">
+            </a>
+        </div>
+
+        <div>
+            <img src="../img/icono-facebook.jpg" alt="" class="iconosFooter">
+            <img src="../img/icono-instagram.jpg" alt="" class="iconosFooter">
+            <img src="../img/icono-ubicacion.jpg" alt="" class="iconosFooter">
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
