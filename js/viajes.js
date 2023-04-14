@@ -1,6 +1,9 @@
 
+
+
+//********************** JS viajes ****************************
 const HTMLresponse = document.querySelector("#app");
-const fecha = new Date()
+
 const datosVuelos = []
 // Creamos un nuevo XMLHttpRequest
 var xhttp = new XMLHttpRequest();
@@ -46,8 +49,6 @@ var boton = document.getElementById("validate");
 //input datos destino
 const destino = document.getElementById("inputdestino");
 
-//btn informacion vuelo
-//var botonInfoVuelo = document.getElementById("idAvion");
 
 //error campo de busqueda de destino vuelos
 const error = document.querySelector("#error");
@@ -68,13 +69,7 @@ boton.onclick = function (e) {
 }
 
 
-//funcion de informacion del vuelo
-//botonInfoVuelo.onClick = function (e) {
-//console.log("vuelo informacion");
-//}
-
 function cargarDatosEncontrados(params) {
-
   const template = params.map((user) =>
     '<li id="listaVuelos" class= "list-group-item d-flex justify-content-between align-items-start">' +
     '<a href="./datosVuelo.html"><img src="../img/avion.png" class="iconoAvion" alt="" id="idAvion"></a>' +
@@ -89,3 +84,5 @@ function cargarDatosEncontrados(params) {
   )
   HTMLresponse.innerHTML = template;
 }
+
+

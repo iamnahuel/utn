@@ -190,3 +190,116 @@
     background-color: #00b3e9;
     border-radius: 50%;
 }
+
+
+/***********Estilos contacto***********/
+.contacto{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    background-color: #212121;
+ 
+}
+
+.labelContacto{
+    color: white;
+}
+
+.errorContacto{
+    
+    color: red;
+    padding-bottom: 10px;
+}
+
+.sectionRedes{
+    background-color: #FEBE2B;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+}
+.datosRedes{
+    color: white;
+   
+}
+
+.divRedSocial{
+   display: block;
+    
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    
+}
+.mapa{
+    background-color:  #212121;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+}
+.divMapa{
+    height: 300px;
+   
+}
+
+.lorem{
+    color: white;
+}
+
+/***********Estilos contacto***********/
+.mainDatosVyelo{
+    background-color:  #212121;
+}
+.imgTrayectoria{
+    width: 300px;
+}
+
+.mapaVeulo{
+    padding: 50px;
+}
+/*section informacion general*/
+.infoGeneralVuelo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around; 
+    background-color: #f0f0f0;
+    margin-left: 50px;
+    margin-right:50px ;
+    height: 200px;
+}
+.destinos{
+   color: black; 
+   font-size: 80px;
+   
+}
+.iconoAvionInfoVeulo{
+    height: 50px;
+    
+}
+.infoSecundariaVeulo{
+    background-color: #f0f0f0;
+    color: black;
+    margin-left:  50px;
+    margin-right:  50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around; 
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.spanInfoVuelos{
+    font-size: medium;
+}
