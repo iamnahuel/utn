@@ -9,7 +9,20 @@
     width: 200px;
 }
 
-
+.contenidoFooter{
+    display: block;
+}
+.pbliRedes{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.datosDesarrolladores{
+    color: white;
+   
+    justify-content: center;
+}
 
 /***********Estilos main***********/
 /*section uno*/
@@ -140,14 +153,16 @@
     background-color: #212121;
 
 }
-.tituloViajes{
+
+.tituloViajes {
     padding-top: 30px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 10px;
     color: white;
 }
-.error{
+
+.error {
     padding-left: 100px;
     color: red;
     padding-bottom: 10px;
@@ -193,51 +208,53 @@
 
 
 /***********Estilos contacto***********/
-.contacto{
+.contacto {
     padding-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
     background-color: #212121;
- 
+
 }
 
-.labelContacto{
+.labelContacto {
     color: white;
 }
 
-.errorContacto{
-    
+.errorContacto {
+
     color: red;
     padding-bottom: 10px;
 }
 
-.sectionRedes{
+.sectionRedes {
     background-color: #FEBE2B;
     padding-top: 100px;
     padding-bottom: 100px;
-    
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: space-around;
     justify-content: space-around;
 }
-.datosRedes{
+
+.datosRedes {
     color: white;
-   
+
 }
 
-.divRedSocial{
-   display: block;
-    
+.divRedSocial {
+    display: block;
+
     align-items: center;
     align-content: space-around;
     justify-content: space-around;
-    
+
 }
-.mapa{
-    background-color:  #212121;
+
+.mapa {
+    background-color: #212121;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -245,61 +262,103 @@
     align-content: space-around;
     justify-content: space-around;
 }
-.divMapa{
+
+.divMapa {
     height: 300px;
-   
+
 }
 
-.lorem{
+.lorem {
     color: white;
 }
 
-/***********Estilos contacto***********/
-.mainDatosVyelo{
-    background-color:  #212121;
+/***********Estilos datos vuelo***********/
+/**Estilos menu vuelo*/
+.titulo {
+    padding: 10px;
 }
-.imgTrayectoria{
+
+.menuVuelo {
+    background-color: #f0f0f0;
+    width: 100%;
+    border: solid 1px gray;
+}
+
+.ulMenu {
+    cursor: pointer;
+    list-style: none;
+    padding: 3px;
+}
+
+.liMenu:hover {
+    background-color: #d8d4d4;
+
+}
+
+
+
+
+.mainDatosVuelo {
+    background-color: #212121;
+    display: flex;
+}
+
+.imgTrayectoria {
     width: 300px;
 }
 
-.mapaVeulo{
-    padding: 50px;
-}
+
 /*section informacion general*/
-.infoGeneralVuelo{
+.infoGeneralVuelo {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: space-around;
-    justify-content: space-around; 
+    justify-content: space-around;
     background-color: #f0f0f0;
-    margin-left: 50px;
-    margin-right:50px ;
-    height: 200px;
-}
-.destinos{
-   color: black; 
-   font-size: 80px;
-   
-}
-.iconoAvionInfoVeulo{
-    height: 50px;
-    
-}
-.infoSecundariaVeulo{
-    background-color: #f0f0f0;
-    color: black;
-    margin-left:  50px;
-    margin-right:  50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-around;
-    justify-content: space-around; 
-    font-size: 30px;
-    padding-bottom: 50px;
+    height: 100px;
+    width: 100%;
 }
 
-.spanInfoVuelos{
+.destinos {
+    color: black;
+    font-size: 80px;
+
+}
+
+.iconoAvionInfoVeulo {
+    height: 50px;
+
+}
+
+.infoSecundariaVeulo {
+    background-color: #f0f0f0;
+    color: black;
+    border: solid 1px gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    font-size: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.spanInfoVuelos {
     font-size: medium;
 }
+
+.spanDestino{
+    color: #6e6e6e;
+    font-size:smaller;
+}
+.textoDestino{
+    font-size:x-large;
+}
+
+.mapaVueloEstilo {
+    width: 100%;
+    height: 200px;
+}
+

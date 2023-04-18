@@ -45,47 +45,108 @@
             </div>
         </nav>
     </header>
-    <main class="mainDatosVyelo">
-       <section class="infoGeneralVuelo">
-            <p class="text-uppercase">
-                <b>NYK</b>
-            </p>
-            <div>
-                <img src="../img/iconoAvion.png" alt="" class="iconoAvionInfoVeulo">
+    <main class="mainDatosVuelo">
+        <div class="menuVuelo col-3">
+            <div class="navbar-nav">
+                <p class="titulo">VUELO N°<b> 01</b></p>
+                <br />
+                <div class="menu">
+                    <ul class="ulMenu">
+                        <li class="liMenu">
+                            <span class="js-btn-menu">
+                                <div class="ico-cont">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                Datos Vuelo
+                            </span>
+                            <hr />
+                        </li>
+                        <li class="liMenu">
+                            <span class="js-btn-menu">
+                                <div class="ico-cont">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                Datos Avion
+                            </span>
+                            <hr />
+                        </li>
+                        <li class="liMenu">
+                            <span class="js-btn-menu">
+                                <div class="ico-cont">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                Datos Clima
+                            </span>
+                            <hr />
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p class="text-uppercase">
-                <b>MAD</b>
-            </p>
-        </section>
-        <section class="infoSecundariaVeulo">
-            <div>
-                <span class="spanInfoVuelos"><b> Hora Salida: </b> </span>
-                <span class="spanInfoVuelos"> 15:45 hs 13|04|2023 </span>
-            </div>
-            <div>
-                <span class="spanInfoVuelos"><b> Hora Arrivo: </b></span>
-                <span class="spanInfoVuelos"> 15:45 hs 13|04|2023 </span>
+        </div>
+        <div class="datosVuelo col-9">
+            <section class="mapaVeulo">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25664110.2886278!2d-38.59730877766938!3d38.26034226001033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1681692829115!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="mapaVueloEstilo"></iframe>
+            </section>
+            <section class="infoGeneralVuelo">
+                <div>
+                    <span class="spanDestino">Nueva York</span>
+                    <p class="text-uppercase textoDestino">
+                        <b>NYK</b>
+                    </p>
+                    <span class="spanDestino">Terminal 2</span>
+                    <span class="spanDestino">Puerta 14</span>
+                </div>
+                <div>
+                    <img src="../img/iconoAvion.png" alt="" class="iconoAvionInfoVeulo">
+                </div>
+                <div>
+                    <span class="spanDestino">Madrid</span>
+                    <p class="text-uppercase textoDestino">
+                        <b>MDR</b>
+                    </p>
+                    <span class="spanDestino">Terminal T4</span>
+                    <span class="spanDestino">Puerta 42</span>
+                </div>
+            </section>
+            <section class="infoSecundariaVeulo">
+                <div>
+                    <div>
+                        <span class="spanInfoVuelos"><b> Hora Salida: </b> </span>
+                        <span class="spanInfoVuelos"> 15:45 hs 13|04|2023 </span>
+                    </div>
+                    <div>
+                        <span class="spanInfoVuelos"><b> Hora Arrivo: </b></span>
+                        <span class="spanInfoVuelos"> 03:45 hs 14|04|2023 </span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="spanInfoVuelos"><b>Estado </b> </span>
+                        <span class="spanInfoVuelos"> En aeropuerto | Salida normal </span>
+                    </div>
+                    <div>
+                        <span class="spanInfoVuelos"><b> Iberia </b></span>
+                        <span class="spanInfoVuelos"> IB6403 </span>
+                    </div>
+                </div>
+            </section>
+            <section class="infoSecundariaVeulo">
+                <div>
+                    <div>
+                        <span class="spanInfoVuelos"><b> Valore: </b> </span>
+                        <span class="spanInfoVuelos"> $750 </span>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@getbootstrap">Comprar Vuelo</button>
 
-            </div>
-        </section>
-        <section class="infoSecundariaVeulo">
-            <div>
-                <span class="spanInfoVuelos"><b>Estado </b> </span>
-                <span class="spanInfoVuelos"> En ruta | Con retraso </span>
-            </div>
-            <div>
-                <span class="spanInfoVuelos"><b> Iberia </b></span>
-                <span class="spanInfoVuelos"> IB6403 </span>
-
-            </div>
-        </section>
-        <section class="mapaVeulo">
-            <img src="../img/trayectoriaVuelo.jpg" class="img-fluid" alt="...">
-        </section>
-
-
-
-
+                </div>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="">
@@ -104,6 +165,113 @@
         </div>
 
     </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Datos Compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Nombre y Apellido</span>
+                                <input type="text" aria-label="First name" class="form-control" id="inputNombre">
+                                <input type="text" aria-label="Last name" class="form-control" id="inputApellido">
+                            </div>
+                            <span id="errorDatosPersonales" class="error"></span>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="inputEmail"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput" >Email address</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h5 class="modal-title" id="exampleModalLabel">Datos Vuelo</h5>
+
+                        <div>
+                            <label class="form-check-label" for="exampleRadios2">
+                                <b>Origen:</b>
+                            </label>
+                            <label class="form-check-label" for="exampleRadios2">
+                                | <b>Destino:</b>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form-check-label" for="exampleRadios2">
+                                | <b>Fecha Salida:</b>
+                            </label>
+                            <label class="form-check-label" for="exampleRadios2">
+                                | <b>Terminal:</b>
+                            </label>
+                            <label class="form-check-label" for="exampleRadios2">
+                                | <b>Fecha Arrivo:</b>
+                            </label>
+                            <label class="form-check-label" for="exampleRadios2">
+                                | <b>Terminal:</b>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form-check-label" for="exampleRadios2">
+                                <b>Compania:</b>
+                            </label>
+                        </div>
+                        <label class="form-check-label" for="exampleRadios2">
+                            <b>Monto:</b>
+                        </label>
+
+                        <hr>
+                        <h5 class="modal-title" id="exampleModalLabel">Forma de pago</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Visa
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Mastercard
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                                value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                                American Express
+                            </label>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="inputNumeroTarjeta" class="form-label">N° tarjeta:</label>
+                            <input type="number" class="form-control" id="inputNumeroTarjeta"
+                                placeholder="0321 3456 3214 5673">
+                            <span id="errorNTarjeta" class="error"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+
+
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="comprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

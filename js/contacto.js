@@ -14,6 +14,7 @@ const errorMsj = document.querySelector("#errorMsj");
 // Ventana modal
 var modal = document.getElementById("exampleModal");
 
+
 enviarMensaje.onclick = () => {
     if (correo.value == 0) {
         error.innerHTML = "Campo obligatorio";
