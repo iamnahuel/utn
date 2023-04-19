@@ -1,6 +1,3 @@
-
-
-
 //********************** JS viajes ****************************
 const HTMLresponse = document.querySelector("#app");
 
@@ -49,11 +46,8 @@ var boton = document.getElementById("validate");
 //input datos destino
 const destino = document.getElementById("inputdestino");
 
-
 //error campo de busqueda de destino vuelos
 const error = document.querySelector("#error");
-
-
 
 // funcion de busqueda de destino
 boton.onclick = function (e) {
